@@ -139,3 +139,15 @@ body {
 .top-site-icon{
   background-color: transparent !important;
 }
+
+
+#appcontent {
+  @media (-moz-bool-pref: "sidebar.revamp") {
+    & {
+      border-top: none !important;
+      border-inline-start: none !important;
+      box-shadow: 0 2px 6px 0 light-dark(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8));
+      position: relative;
+    }
+  }
+}

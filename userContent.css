@@ -384,7 +384,6 @@ url("about:newtab") {
     flex-direction: column !important;
     }
   }
-
 }
 
 @-moz-document url-prefix("about:") {
@@ -403,3 +402,12 @@ url("about:newtab") {
     background-color: var(--firefoxcss-main-bg-color) !important;
   }
 }
+
+.fbar,
+.ym1pid{
+  border: none !important;
+}
+
+
+
+
