@@ -21,9 +21,10 @@
 url("about:newtab") {
 
 body {
-    background: none !important; /* Remove default background */
+    background: #000 !important; /* Remove default background */
   }
 
+/*
   body::before {
     content: "";
     position: fixed;
@@ -32,9 +33,11 @@ body {
     width: 100vw;
     height: 100vh;
     background: url("./ASSETS/wallpaper/wallpaper.png") center/cover no-repeat;
-    filter: blur(4px); /* Adjust blur level */
-    z-index: -1; /* Ensures the background is behind all content */
+    background: #000;
+    filter: blur(4px); 
+    z-index: -1; 
   }
+*/
 
   .outer-wrapper .search-wrapper .search-handoff-button {
     backdrop-filter: blur(24px) !important;
@@ -60,7 +63,7 @@ body {
     margin-left: 0px !important;
     margin-right: 0px !important;
     width: 100% !important;
-    border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent) !important;
+    /* border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent) !important; */
   }
     
   .outer-wrapper .top-sites-list .top-site-outer {
@@ -99,7 +102,8 @@ body {
   }
 
   .outer-wrapper .top-site-outer .top-site-inner {
-    backdrop-filter: blur(24px) !important;
+      filter: grayscale(100%) !important;
+/*    backdrop-filter: blur(24px) !important;
     background-color: hsla(0, 0%, 13%, 0.5) !important;
     border-radius: 10px !important;
     border: 1px solid #ffffff17 !important;
@@ -107,10 +111,12 @@ body {
       0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
       0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075) !important;
     /* 1px solid #33333329 !important  */
+*/
   }
 
   .outer-wrapper .body-wrapper .top-site-inner:hover {
-    border: 1px solid #00000017 !important;
+/*    border: 1px solid #00000017 !important; */
+      filter: grayscale(0%) !important;
   }
 
   .outer-wrapper .search-wrapper .search-handoff-button .fake-textbox {
@@ -146,7 +152,7 @@ body {
     & {
       border-top: none !important;
       border-inline-start: none !important;
-      box-shadow: 0 2px 6px 0 light-dark(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8));
+      box-shadow: unset !important;
       position: relative;
     }
   }
