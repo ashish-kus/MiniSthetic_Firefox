@@ -1,0 +1,107 @@
+/* Hide window MAX MIN CLOSE buttons */
+.titlebar-buttonbox-container {
+    display: none;
+}
+
+/* Hide toolbar spacers */
+#titlebar .titlebar-spacer {
+    display: none !important;
+}
+
+#TabsToolbar {
+    margin-top: -1px !important;
+    padding-bottom: 1px !important;
+}
+
+#nav-bar {
+  margin-left: 120px !important; 
+  margin-top:-35px !important;
+  margin-right: 40px !important; 
+  background: black !important;
+  z-index : 100 !important;
+  border: none !important;
+}
+
+
+#navigator-toolbox{
+  background: black !important;
+  padding: 0px !important;
+}
+
+
+.wrapper{
+  background:black !important;
+  padding-left: 4px !important;
+}
+
+#toolbar-menubar {
+    color: var(--moonlight-gray-10) !important;   
+}
+
+#forward-button{
+  color: var(--moonlight-gray-3) !important;
+}
+
+
+.tabbrowser-tab .tab-stack {
+    background: var(--moonlight-gray-1) !important;
+    margin: 2px 0px 2px 2px !important;
+    border-radius: 15px !important;
+    color: var(--moonlight-gray-10) !important;
+    transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+.tabbrowser-tab .tab-background {
+    border: none !important;
+    transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+.tabbrowser-tab::after {
+    display: none !important;
+}
+.tab-content{
+  padding: 0px !important;
+}
+
+.tab-content[selected]{
+    background: var(--moonlight-gray-4) !important;
+  border-radius: 5px !important;
+}
+.tabbrowser-tab:hover .tab-stack{
+    border-color: var(--moonlight-blue) !important;
+    color: var(--moonlight-gray-10) !important;
+}
+.tabbrowser-tab:hover .tab-background {
+    background: var(--moonlight-gray-1) !important;
+}
+.tabbrowser-tab[selected] .tab-stack {
+    border-color: var(--moonlight-gray-1) !important;
+    color: var(--moonlight-gray-10) !important;
+
+}
+.tabbrowser-tab[selected] .tab-background {
+    background: var(--moonlight-gray-1) !important;
+    width: 100% !important;
+    margin: 0 0 0 4px !important;
+}
+.tab-background .tab-line {
+    display: none;
+}
+.tabbrowser-tab .tab-text {
+    opacity: 1 !important;
+}
+.tabbrowser-tab .close-icon {
+    fill: var(--moonlight-gray-3) !important;
+    transition: fill 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+.tabbrowser-tab:hover .close-icon {
+    fill: var(--moonlight-gray-9) !important;
+    background-color: transparent !important;
+}
+#tabs-newtab-button .toolbarbutton-icon {
+    width: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+    height: calc(2 * var(--toolbarbutton-inner-padding) + 12px) !important;
+    margin-top: 1px !important;
+}
+
+#newtab-button-container {
+  margin-right: 0 !important;
+}
