@@ -4,7 +4,7 @@ A lightweight and minimalist CSS theme for Firefox that enhances aesthetics with
 
 ## Preview
 
-![Preview of Minimal Aesthetic Firefox CSS](preview.png)
+<div align="center" width="100%"> <img src="./ASSETS/Preview/Preview_2.png"> </div>
 
 ## Installation Guide
 
