@@ -4,7 +4,7 @@ A lightweight and minimalist CSS theme for Firefox that enhances aesthetics with
 
 ## Preview
 
-<div align="center" width="100%"> <img src="./ASSETS/Preview/preview_2.png"> </div>
+<div align="center" width="100%"> <img src="./ASSETS/Preview/Preview.png"> </div>
 
 ## Installation Guide
 
@@ -30,6 +30,17 @@ To install this custom CSS theme in Firefox, follow these steps:
 
 5. **Customize to Your Liking** *(optional)*
    - Open the CSS files in the `chrome` folder and modify the styles to suit your preferences.
+
+<details> <summary><strong>How to Set a Wallpaper/Background Image in Firefox</strong></summary>
+
+
+To have the wallpaper/background image display correctly in Firefox, follow these steps:
+Ensure your image file is named wallpaper.png and place the image in the following directory:
+```
+    PROFILE_DIRECTORY/chrome/styles/ASSETS/wallpaper/walpaper.png
+```
+
+</details>
 
 ---
 
