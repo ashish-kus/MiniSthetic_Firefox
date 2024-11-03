@@ -1,43 +1,11 @@
-:root {
-  --firefoxcss-wallpaper-item-bg-color: hsla(0, 0%, 12%, 0.7);
-  --firefoxcss-wallpaper-item-hover-bg-color: hsla(0, 0%, 14%, 0.5);
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --newtab-wordmark-color: #fbfbfe !important;
-    --firefoxcss-search-bar-text-color: #fbfbfe !important;
-    --firefoxcss-context-menu-three-dots: #fbfbfe !important;
-  }
-
-  .top-site-outer .title {
-  color: #fbfbfe !important;
-  }
-  
-}
-
 /* Wallapaper edition. Change wallpaper.jpg to wallpaper.png if used different file extension */
 @-moz-document url("about:home"),
 url("about:newtab") {
 
-body {
-    background: #000 !important; /* Remove default background */
+  body {
+    background: #000 !important;
+    /* Remove default background */
   }
-
-/*
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url("./ASSETS/wallpaper/wallpaper.png") center/cover no-repeat;
-    background: #000;
-    filter: blur(4px); 
-    z-index: -1; 
-  }
-*/
 
   .outer-wrapper .search-wrapper .search-handoff-button {
     backdrop-filter: blur(24px) !important;
@@ -65,21 +33,21 @@ body {
     width: 100% !important;
     /* border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent) !important; */
   }
-    
+
   .outer-wrapper .top-sites-list .top-site-outer {
     padding-inline: 14px !important;
     margin-block-end: 24px !important;
   }
 
-  .top-site-outer:hover{
+  .top-site-outer:hover {
     background-color: transparent !important;
   }
-  
-  .outer-wrapper .top-site-outer .top-site-inner > a {
+
+  .outer-wrapper .top-site-outer .top-site-inner>a {
     padding: 0px !important;
   }
-  
-   .outer-wrapper .top-site-outer .context-menu-button {
+
+  .outer-wrapper .top-site-outer .context-menu-button {
     inset-inline-end: 4px !important;
     top: -20px !important;
   }
@@ -102,21 +70,12 @@ body {
   }
 
   .outer-wrapper .top-site-outer .top-site-inner {
-      filter: grayscale(100%) !important;
-/*    backdrop-filter: blur(24px) !important;
-    background-color: hsla(0, 0%, 13%, 0.5) !important;
-    border-radius: 10px !important;
-    border: 1px solid #ffffff17 !important;
-    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075) !important;
-    /* 1px solid #33333329 !important  */
-*/
+    filter: grayscale(100%) !important;
   }
 
   .outer-wrapper .body-wrapper .top-site-inner:hover {
-/*    border: 1px solid #00000017 !important; */
-      filter: grayscale(0%) !important;
+    /*    border: 1px solid #00000017 !important; */
+    filter: grayscale(0%) !important;
   }
 
   .outer-wrapper .search-wrapper .search-handoff-button .fake-textbox {
@@ -133,16 +92,14 @@ body {
     transform: scale(1.2);
   }
 
-  .outer-wrapper
-    .top-sites-list:not(.dnd-active)
-    .top-site-outer:is(.active, :focus) {
+  .outer-wrapper .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus) {
     z-index: 8;
     position: relative;
     background-color: transparent !important;
   }
 }
 
-.top-site-icon{
+.top-site-icon {
   background-color: transparent !important;
 }
 
