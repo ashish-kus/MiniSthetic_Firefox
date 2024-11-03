@@ -4,21 +4,20 @@ A lightweight and minimalist CSS theme for Firefox that enhances aesthetics with
 
 ## Preview
 
-<div align="center" width="100%"> <img src="./ASSETS/Preview/Preview_2.png"> </div>
+<div align="center" width="100%"> <img src="./ASSETS/Preview/preview_2.png"> </div>
 
 ## Installation Guide
 
 To install this custom CSS theme in Firefox, follow these steps:
 
 1. **Enable Custom CSS in Firefox**
-   - Type `about:config` in your URL bar.
+   - Type `about:config` in your URL bar and press Enter.
    - If prompted, click **I accept the risk**.
    - Search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to **true**.
 
 2. **Enable Sidebar/Vertical Tabs**
-   - Search for `browser.tabs.drawInTitlebar` and set it to **false**. This will make room for vertical tabs by disabling tabs in the title bar.
-   - Search for `browser.proton.enabled` and set it to **false** to support certain sidebar adjustments.
-   - **Optional CSS Configuration:** Customize the `userChrome.css` file in the `chrome` folder for further adjustments to vertical tabs (e.g., tab size, styling).
+   - In `about:config`, search for `sidebar.verticalTab` and set it to **true**.
+   - Then, search for `sidebar.revamp` and set it to **true**.
 
 3. **Locate Your Firefox Profile Folder**
    - Linux: `$HOME/.mozilla/firefox/######.default-release/`
@@ -26,11 +25,11 @@ To install this custom CSS theme in Firefox, follow these steps:
    - Windows: `C:\Users\[USERNAME]\AppData\Roaming\Mozilla\Firefox\Profiles\######.default-release`
 
 4. **Copy Files to Your Profile**
-   - Copy the `chrome` folder into your Firefox profile folder.
+   - Copy the `chrome` folder (containing `userChrome.css` and any other necessary CSS files) into your Firefox profile folder.
    - Restart Firefox to apply the CSS theme.
 
 5. **Customize to Your Liking** *(optional)*
-   - Open the CSS files in the `chrome` folder and modify styles to suit your preferences.
+   - Open the CSS files in the `chrome` folder and modify the styles to suit your preferences.
 
 ---
 
