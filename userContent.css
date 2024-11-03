@@ -357,8 +357,6 @@ url("about:newtab") {
       	}
   }
 }
-  
-  
 }
 
 @-moz-document url-prefix(about:firefoxview) {
@@ -408,3 +406,9 @@ url("about:newtab") {
   border: none !important;
 }
 
+
+#MathJax_Message {
+  background-color: red !important;
+  border-color: red !important;
+  color: rgb(253, 251, 247) !important;
+}
