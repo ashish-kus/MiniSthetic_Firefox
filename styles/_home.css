@@ -8,7 +8,6 @@ url("about:newtab") {
    background: var(--baseBG) !important;
    position: relative;
 }
-/*
 body::before {
     content: "";
     position: fixed;
@@ -21,7 +20,6 @@ body::before {
     z-index: -1;
     pointer-events: none;
 }
-*/
 
   .outer-wrapper .search-wrapper .search-handoff-button {
     backdrop-filter: blur(24px) !important;
