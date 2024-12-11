@@ -5,7 +5,7 @@ url("about:newtab") {
   
 
   body {
-   background: #11111b !important;
+   background: var(--baseBG) !important;
    position: relative;
 }
 /*

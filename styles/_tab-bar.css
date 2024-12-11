@@ -14,14 +14,14 @@
 
 
 #navigator-toolbox{
-  background: #11111b !important;
+  background: var(--baseBG) !important;
   padding: 0px !important;
   border: none !important;
 }
 
 
 .wrapper{
-  background: #11111b !important;
+  background: var(--baseBG) !important;
 }
 
 #toolbar-menubar {
@@ -32,7 +32,6 @@
   color: var(--moonlight-gray-3) !important;
 }
 
-
 .tabbrowser-tab .tab-stack {
     background: var(--moonlight-gray-1) !important;
     margin: 2px 0px 2px 2px !important;
@@ -40,33 +39,40 @@
     color: var(--moonlight-gray-10) !important;
     transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
+
 .tabbrowser-tab .tab-background {
     border: none !important;
     transition: background-color, border-color 300ms cubic-bezier(0.645, 0.045, 0.355, 1) !important;
 }
+
 .tabbrowser-tab::after {
     display: none !important;
 }
+
 .tab-content{
-  margin-right: 2px !important;
+  background-color: var(--baseBG)
 }
 
 .tab-content[selected]{
     background: var(--moonlight-gray-4) !important;
-    border-radius: 2px !important;
+    border-radius: 4px !important;
 }
+
 .tabbrowser-tab:hover .tab-stack{
     border-color: var(--moonlight-blue) !important;
     color: var(--moonlight-gray-10) !important;
 }
+
 .tabbrowser-tab:hover .tab-background {
     background: var(--moonlight-gray-1) !important;
 }
+
 .tabbrowser-tab[selected] .tab-stack {
     border-color: var(--moonlight-gray-1) !important;
     color: var(--moonlight-gray-10) !important;
 
 }
+
 .tabbrowser-tab[selected] .tab-background {
     background: var(--moonlight-gray-1) !important;
     width: 100% !important;
