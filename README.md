@@ -6,6 +6,24 @@ A lightweight and minimalist CSS theme for Firefox that enhances aesthetics with
 
 <div align="center" width="100%"> <img src="./ASSETS/Preview/Preview.png"> </div>
 
+<com.denzcoskun.imageslider.ImageSlider    
+     android:id="@+id/image_slider"    
+     android:layout_width="wrap_content"    
+     android:layout_height="300dp"    
+     app:iss_auto_cycle="true"    
+     app:iss_period="1000"    
+     app:iss_delay="1000"    
+     app:iss_text_align="CENTER"/>
+
+val imageList = ArrayList<SlideModel>() // Create image list  
+  
+  
+imageList.add(SlideModel("./ASSETS/Preview/preview_1.png", "The animal population decreased by 58 percent in 42 years."))  
+imageList.add(SlideModel("./ASSETS/Preview/preview_2.png", "Elephants and tigers may become extinct."))  
+  
+val imageSlider = findViewById<ImageSlider>(R.id.image_slider)  
+imageSlider.setImageList(imageList)  
+
 ## Installation Guide
 
 To install this custom CSS theme in Firefox, follow these steps:
